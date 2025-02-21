@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables & Comments</title>
+    <script defer src="script.js"></script> <!-- Link to script.js -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Variables & Comments</h1>
+    <button onclick="displayInfo()">Click to See Info</button>
+    <p id="info"></p>
+
+    <script>
+        function displayInfo() {
+            let message = "🚗 Car Name: Volvo\n" + 
+                          "📅 Age: 30\n" + 
+                          "📏 Height: 175.5 cm\n" + 
+                          "💍 Married: false\n" +
+                          "🎨 Favorite Colors: Red, Green, Blue";
+            document.getElementById("info").innerText = message;
+        }
+    </script>
+
+</body>
+</html>
